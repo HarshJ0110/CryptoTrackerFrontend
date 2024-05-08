@@ -17,6 +17,7 @@ const ResetPassword = () => {
     const resetPasswordSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch(`${link}/api/user/password/reset`, {
+            mode: 'no-cors',
             method: "POST",
             headers: {
               "Content-Type": "application/json",
