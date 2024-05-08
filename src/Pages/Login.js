@@ -20,7 +20,6 @@ const Login = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(`${link}/api/user/login`, {
-      mode: 'no-cors',
       method: "POST",
       headers: {
         "Content-Type": "application/json",
