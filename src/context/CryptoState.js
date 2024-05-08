@@ -33,6 +33,7 @@ const CryptoState = (prop) => {
   const getCoins = async () => {
 
     const response = await fetch(`${host}/api/watchlist/getAllCoins`, {
+      mode: 'no-cors',
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -46,6 +47,7 @@ const CryptoState = (prop) => {
   const addCoin = async (id, coin) => {
 
     const response = await fetch(`${host}/api/watchlist/addCoin`, {
+      mode: 'no-cors',
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,6 +62,7 @@ const CryptoState = (prop) => {
   const getUser = async () => {
 
     const response = await fetch(`${host}/api/user/getUser`, {
+      mode: 'no-cors',
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -73,6 +76,7 @@ const CryptoState = (prop) => {
 
   const deleteCoin = async (id) => {
     const response = await fetch(`${host}/api/watchlist/removeCoin/${id}`, {
+      mode: 'no-cors',
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
