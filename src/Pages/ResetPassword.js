@@ -8,7 +8,7 @@ const ResetPassword = () => {
 
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
-    const link = "https://crypto-tracker-backend-sand.vercel.app"
+    const link = "https://cryptotrackerbackend.onrender.com"
     const context = useContext(CryptoContext);
     const { showAlert, alert } = context;
     let navigation = useNavigate();
