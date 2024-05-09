@@ -16,7 +16,7 @@ function App() {
     
       getUser()
     
-  })
+  },[])
   
   return (
     <BrowserRouter>
