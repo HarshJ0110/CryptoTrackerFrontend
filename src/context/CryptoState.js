@@ -53,8 +53,15 @@ const CryptoState = (prop) => {
       },
       body: JSON.stringify({ id, coin }),
     });
+   
     const coin1 = await response.json();
-    setCoins(coins.concat(coin1));
+    if (!Array.isArray(coins)) {
+      setCoins(coin1);
+    }else{
+      setCoins(coins.concat(coin1));
+    }
+    
+    
   }
 
   const getUser = async () => {
