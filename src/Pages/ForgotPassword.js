@@ -6,7 +6,7 @@ import Alert from '../Components/Alert';
 const ForgotPassword = () => {
 
     const [email, setEmail] = useState("");
-    const link = "https://crypto-tracker-backend-sand.vercel.app"
+    const link = "https://cryptotrackerbackend.onrender.com"
     const context = useContext(CryptoContext);
     const { showAlert, alert } = context;
 
