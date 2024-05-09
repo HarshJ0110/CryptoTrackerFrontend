@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import CryptoContext from './CryptoContext';
 
 const CryptoState = (prop) => {
-  const host = "https://crypto-tracker-backend-sand.vercel.app";
+  const host = "https://cryptotrackerbackend.onrender.com";
   const [currency, setCurrency] = useState("INR");
   const [symbol, setSymbol] = useState("₹");
   const [userName, setUserName] = useState("");
