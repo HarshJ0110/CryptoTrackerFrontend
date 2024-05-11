@@ -29,7 +29,7 @@ const Navbar = () => {
                 </select>
                 {!login && <Link to="/signup" className='text-lg pl-5 md:py-1'>Signup</Link>}
                 {login && <button className='text-lg px-5 md:pl-7 md:py-1' onClick={handleClick}><i class="fa-solid fa-file-lines"></i></button>}
-                {login && <button className='text-lg md:px-5 md:py-1' onClick={handleLogout}>Logout</button>}
+                {login && <button className='text-lg md:px-5 md:py-1' onClick={handleLogout}><i class="fa-solid fa-right-from-bracket"></i></button>}
             </div>
         </div>
     )
