@@ -37,7 +37,7 @@ a:hover{
 .sidebar {
   position: absolute;
   top: 0;
-  left: -120%;
+  left: -110%;
   z-index: 3;
   overflow-y: auto;
   transition: 0.3s;
